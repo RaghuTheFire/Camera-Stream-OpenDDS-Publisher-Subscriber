@@ -14,3 +14,14 @@ Here's a breakdown of the code:
 In summary, this program is a simple example of how to use OpenCV for video capture and OpenSplice DDS for publishing the captured frames to a distributed system.
 
 # Camera_Subscriber_OpenDDS.cpp
+This C++ code is using the Data Distribution Service (DDS) middleware to receive and process video frames. Here's a breakdown of what the code is doing: 1. The code includes the necessary header files for DDS and OpenCV (a computer vision library). 
+2. The `main()` function is the entry point of the program. 
+3. Inside the `main()`, the code initializes a DDS domain participant, which represents a DDS application. 
+4. A DDS subscriber is created, which is responsible for receiving data from the DDS network. 
+5. A DDS topic is created for the "VideoFrameTopic", which represents the data type (in this case, `cv::Mat`, which is an OpenCV matrix) and the name of the data stream. 
+6. A DDS data reader is created, which is associated with the subscriber and the video frame topic. This data reader is responsible for receiving the video frames from the DDS network. 
+7. The code then waits for data to be available from the data reader using the `take()` method, which retrieves the available samples (video frames). 
+8. For each valid sample (video frame), the code processes the frame using the `cv::Mat` object. This is where you would add your own video frame processing code. 
+9. Finally, the program returns 0, indicating successful execution. 
+
+In summary, this code sets up a DDS-based system to receive and process video frames, using OpenCV for the video frame data type. The actual video frame processing logic is left to be implemented by the user.
