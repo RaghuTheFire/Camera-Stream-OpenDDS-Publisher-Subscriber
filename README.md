@@ -1,5 +1,4 @@
-
-
+# Camera_Publish_OpenDDS.cpp
 This C++ code is a program that captures video frames from a video capture device (likely a webcam) and publishes them using the OpenSplice DDS (Data Distribution Service) middleware. 
 Here's a breakdown of the code: 
 1. The program includes the necessary header files from the OpenSplice DDS library to work with publishers, data writers, and topics.
