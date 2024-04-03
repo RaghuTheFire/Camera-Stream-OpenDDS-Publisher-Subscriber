@@ -12,3 +12,5 @@ Here's a breakdown of the code:
 9. Finally, the program returns 0 to indicate successful execution.
 
 In summary, this program is a simple example of how to use OpenCV for video capture and OpenSplice DDS for publishing the captured frames to a distributed system.
+
+# Camera_Subscriber_OpenDDS.cpp
