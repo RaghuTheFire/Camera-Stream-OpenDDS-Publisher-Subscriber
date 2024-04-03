@@ -14,7 +14,9 @@ Here's a breakdown of the code:
 In summary, this program is a simple example of how to use OpenCV for video capture and OpenSplice DDS for publishing the captured frames to a distributed system.
 
 # Camera_Subscriber_OpenDDS.cpp
-This C++ code is using the Data Distribution Service (DDS) middleware to receive and process video frames. Here's a breakdown of what the code is doing: 1. The code includes the necessary header files for DDS and OpenCV (a computer vision library). 
+This C++ code is using the Data Distribution Service (DDS) middleware to receive and process video frames. 
+Here's a breakdown of what the code is doing: 
+1. The code includes the necessary header files for DDS and OpenCV (a computer vision library). 
 2. The `main()` function is the entry point of the program. 
 3. Inside the `main()`, the code initializes a DDS domain participant, which represents a DDS application. 
 4. A DDS subscriber is created, which is responsible for receiving data from the DDS network. 
